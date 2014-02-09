@@ -25,3 +25,8 @@ list_concat.([1,2,3], [4,5,6]) # [1, 2, 3, 4, 5, 6]
 other_sum = fn a, b, c -> a + b + c end
 
 IO.puts other_sum.(1, 2, 3) # 6
+
+# pair tuple to list
+pair_tuple_to_list = fn {a, b} -> [a, b] end
+
+IO.puts pair_tuple_to_list.({ 8, 7}) # [8, 7]
