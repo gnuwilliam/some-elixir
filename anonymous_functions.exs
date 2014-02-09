@@ -20,3 +20,8 @@ swap.( { 10, 15 } ) # 15, 10
 list_concat = fn a, b -> a ++ b end
 
 list_concat.([1,2,3], [4,5,6]) # [1, 2, 3, 4, 5, 6]
+
+# sum with 3 args
+other_sum = fn a, b, c -> a + b + c end
+
+IO.puts other_sum.(1, 2, 3) # 6
