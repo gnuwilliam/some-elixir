@@ -10,3 +10,8 @@ IO.puts sum.(10, 30) # 40
 hello = fn -> "hello" end
 
 IO.puts hello.() # "hello"
+
+# pattern matching
+swap = fn { a, b } -> { b, a } end
+
+result = swap.( { 10, 15 } ) # 15, 10
