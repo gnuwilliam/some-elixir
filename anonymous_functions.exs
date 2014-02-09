@@ -14,4 +14,9 @@ IO.puts hello.() # "hello"
 # pattern matching
 swap = fn { a, b } -> { b, a } end
 
-result = swap.( { 10, 15 } ) # 15, 10
+swap.( { 10, 15 } ) # 15, 10
+
+# list concat
+list_concat = fn a, b -> a ++ b end
+
+list_concat.([1,2,3], [4,5,6]) # [1, 2, 3, 4, 5, 6]
